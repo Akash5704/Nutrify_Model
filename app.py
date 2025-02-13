@@ -11,11 +11,10 @@ CORS(app)  # Enable CORS for all routes
 
 # Load the trained model
 model = tf.keras.models.load_model('./Food.keras')
-
 # Define MongoDB connection
-client = MongoClient('mongodb://127.0.0.1:27017/')
-db = client['FoodDB']
-food_collection = db['foods']
+client = MongoClient('mongodb+srv://jaiswarakash04:admin@cluster0.g2hng.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+db = client['Nutrify']
+food_collection = db['Nutrients']
 
 # Class names for predictions
 CLASS_NAMES = [
