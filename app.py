@@ -38,30 +38,24 @@ def load_and_prep_image(image_path, img_shape=224, scale=False):
     except Exception as e:
         print(f"Error processing image: {e}")
         raise
-
 def get_nutrients(food_name, weight):
-    """Fetch nutrients from MongoDB based on food name and weight"""
     try:
         print(f"Searching for food: {food_name}")
-        food = food_collection.find_one({"name": {"$regex": f"^{food_name}$", "$options": "i"}})
-        
+        food = food_collection.find_one(
+            {"name": {"$regex": f"^{food_name}$", "$options": "i"}},
+            {"_id": 0}  # Exclude ID
+        )
         if not food:
-            print(f"Food '{food_name}' not found in database.")
             return {"error": "Food not found"}
         
-        # Calculate nutrient values based on weight and round to 2 decimal places
-        nutrients = {
-            "name": food["name"],
-            "weight": weight,
-            "calories": round(food["per_gram"]["calories"] * weight, 2),
-            "protein": round(food["per_gram"]["protein"] * weight, 2),
-            "carbs": round(food["per_gram"]["carbs"] * weight, 2),
-            "fats": round(food["per_gram"]["fats"] * weight, 2),
-        }
+        nutrients = {k: round(food["per_gram"][k] * weight, 2) for k in ["calories", "protein", "carbs", "fats"]}
+        nutrients["name"], nutrients["weight"] = food["name"], weight
         return nutrients
+
     except Exception as e:
         print(f"Error fetching nutrients: {e}")
-        return {"error": "Error fetching nutrient data from database"}
+        return {"error": "Database error"}
+
 
 @app.route('/', methods=['GET'])
 def home():
