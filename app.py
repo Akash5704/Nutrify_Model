@@ -8,7 +8,8 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
-
+img = None  # Manually release memory after prediction
+tf.keras.backend.clear_session()
 # Load the trained model
 model = tf.keras.models.load_model('./Food.keras')
 # Define MongoDB connection
