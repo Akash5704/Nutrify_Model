@@ -1,2 +1,7 @@
 flask
 tensorflow
+pymongo
+flask
+flask_cors
+werkzeug
+numpy
