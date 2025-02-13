@@ -1,0 +1,138 @@
+[
+    {
+      "name": "Besan_cheela",
+      "per_gram": {
+        "calories": 2.36,
+        "protein": 0.12,
+        "carbs": 0.27,
+        "fats": 0.09
+      }
+    },
+    {
+      "name": "Biryani",
+      "per_gram": {
+        "calories": 2.9,
+        "protein": 0.06,
+        "carbs": 0.45,
+        "fats": 0.07
+      }
+    },
+    {
+      "name": "Chapathi",
+      "per_gram": {
+        "calories": 1.2,
+        "protein": 0.031,
+        "carbs": 0.19,
+        "fats": 0.03
+      }
+    },
+    {
+      "name": "Chole_bature",
+      "per_gram": {
+        "calories": 4.27,
+        "protein": 0.13,
+        "carbs": 0.49,
+        "fats": 0.18
+      }
+    },
+    {
+      "name": "Dahl",
+      "per_gram": {
+        "calories": 1.98,
+        "protein": 0.09,
+        "carbs": 0.24,
+        "fats": 0.06
+      }
+    },
+    {
+      "name": "Dhokla",
+      "per_gram": {
+        "calories": 1.65,
+        "protein": 0.07,
+        "carbs": 0.28,
+        "fats": 0.02
+      }
+    },
+    {
+      "name": "Dosa",
+      "per_gram": {
+        "calories": 1.68,
+        "protein": 0.04,
+        "carbs": 0.31,
+        "fats": 0.02
+      }
+    },
+    {
+      "name": "Gulab_jamun",
+      "per_gram": {
+        "calories": 1.75,
+        "protein": 0.02,
+        "carbs": 0.30,
+        "fats": 0.06
+      }
+    },
+    {
+      "name": "Idli",
+      "per_gram": {
+        "calories": 0.58,
+        "protein": 0.02,
+        "carbs": 0.12,
+        "fats": 0.005
+      }
+    },
+    {
+      "name": "Jalebi",
+      "per_gram": {
+        "calories": 1.5,
+        "protein": 0.01,
+        "carbs": 0.35,
+        "fats": 0.04
+      }
+    },
+    {
+      "name": "Naan",
+      "per_gram": {
+        "calories": 2.62,
+        "protein": 0.07,
+        "carbs": 0.43,
+        "fats": 0.06
+      }
+    },
+    {
+      "name": "Paani_puri",
+      "per_gram": {
+        "calories": 3.3,
+        "protein": 0.05,
+        "carbs": 0.50,
+        "fats": 0.12
+      }
+    },
+    {
+      "name": "Pizza",
+      "per_gram": {
+        "calories": 2.85,
+        "protein": 0.12,
+        "carbs": 0.36,
+        "fats": 0.10
+      }
+    },
+    {
+      "name": "Sushi",
+      "per_gram": {
+        "calories": 2,
+        "protein": 0.08,
+        "carbs": 0.28,
+        "fats": 0.03
+      }
+    },
+    {
+      "name": "Ice_cream",
+      "per_gram": {
+        "calories": 1.37,
+        "protein": 0.023,
+        "carbs": 0.16,
+        "fats": 0.07
+      }
+    }
+  ]
+  
